@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI_BEAUTY</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    
+    <input type="checkbox" id="toggle">
+    <div class="header">
+        <div id="store">DI_BEAUTY</div>
+        <div class="cen">
+            <div><a href="index.html" id="home">Home</a></div>
+            <div><a href="products.html" id="products">Products</a></div>
+            <div><a href="index.html#map" id="about_us">About us</a></div> 
+            <div><a href="login.html" id="login">Log In</a></div>
+        </div>
+        <div class="nav">
+            <label for="toggle">&#9776;</label>
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="popup" id="login">
+        <div class="popup-content">
+            <img src="https://yt3.ggpht.com/a/AATXAJye0OiWUIY-icK5bDMp303DCLkn3p85i-5grhqAzw=s900-c-k-c0x00ffffff-no-rj" alt="" width="25%">
+            <h2 class="title">Log In</h2>
+            <input style="margin: 20px auto;" id="username" type="text" name="username" placeholder="Username or email">
+            <input style="margin: 20px auto;" id="pass" type="password" name="pass" placeholder="Password">
+            <a href="#" class="link" onclick="uuser()" id="link_uuser">Log In</a>
+            <a href="#" class="link">Forgot your password?</a>
+            <a href="#" class="link" onclick="createAccount()" id="linkCreateAccount">Don't have an account? Create account</a>
+        </div>
+    </div>
+
+    <div class="createAccount" id="createAccount">
+        <div class="createA-content">
+            <img src="https://yt3.ggpht.com/a/AATXAJye0OiWUIY-icK5bDMp303DCLkn3p85i-5grhqAzw=s900-c-k-c0x00ffffff-no-rj" alt="" width="25%">
+            <h2 class="title">Create Account</h2>
+            <input style="margin: 20px auto;" id="username2" type="text" name="username2" placeholder="Username">
+            <input style="margin: 20px auto;" id="email" type="text" name="email" placeholder="Email Address">
+            <input style="margin: 20px auto;" id="pass1" type="password" name="pass1" placeholder="Password">
+            <input style="margin: 20px auto;" id="pass2" type="password" name="pass2" placeholder="Confirm password">
+            <a href="#" class="link" onclick="uuser()" id="link_uuser">Continue</a>
+            <a href="#" class="link" onclick="closeCA()" id="linkLogin">Already have an account? Log In</a>
+        </div>
+    </div>
+
+    <div class="uuser" id="uuser">
+        <div class="uuser-content">
+            <img src="https://yt3.ggpht.com/a/AATXAJye0OiWUIY-icK5bDMp303DCLkn3p85i-5grhqAzw=s900-c-k-c0x00ffffff-no-rj" alt="" width="25%">
+            <img class="closed" onclick="close_uuser()" src="https://im0-tub-kz.yandex.net/i?id=f564da2ebfacd1e5f91694c583acac49&n=13" alt="" width="4%">
+            <h2 class="title"><i class='fa fa-check' style='font-size:36px; color: rgb(56, 231, 47);'></i><br>Success!!! Welcome!</h2>
+            <h3 class="title">Use with pleasure! Make your first order above 15,000 tenge <br> and get a new year's gift from our store for any choice!</h3>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
