@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
 });
 
 use App\Http\Controllers\TemplateController;
-Route::get('ex', 'App\Http\Controllers\TemplateController@index');
+Route::get('/', 'App\Http\Controllers\TemplateController@index');
 
 use App\Http\Controllers\MailController;
 Route::get('/send', [MailController::class, 'send']);
